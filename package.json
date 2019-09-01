@@ -1,0 +1,12 @@
+{
+  "name": "talk",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "reveal-md slides.md --theme beige --css styles.css",
+    "start-dev": "reveal-md slides.md --theme beige --css styles.css -w",
+    "build": "reveal-md slides.md --theme beige --css styles.css --static _site"
+  },
+  "author": "Francesco Guardiani",
+  "license": "ISC"
+}
