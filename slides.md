@@ -45,7 +45,7 @@
 
 ## E il Virtual Filesystem Switch?
 
-È il VFS che permette di accedere in modo trasparente a tutti gli altri VFS montati nel nostro sistema
+È il VFS che permette di accedere in modo trasparente a tutti gli altri FS montati nel nostro sistema
 
 ---
 
@@ -55,7 +55,7 @@
 
 ---
 
-## Come implementiamo un VFS?
+## Come implementiamo un Filesystem?
 
 - <!-- .element: class="fragment" data-fragment-index="1" --> linux/fs.h
 - <!-- .element: class="fragment" data-fragment-index="2" --> FUSE
@@ -137,6 +137,13 @@ pub enum FSEntry {
 }
 ```
 
+Note:
+
+* Inode è id nodo per fuse
+* Spiega come funziona Rc
+* Spiega Weak
+* Spiega interior mutability pattern
+
 ---
 
 ## Da Java a Rust
@@ -165,6 +172,18 @@ Note: Mostra macro per i test
 
 ---
 
-Meglio implementare trait su tipi generici che metodi "statici"
+I generics sono molto più potenti di quelli di Java
 
 Note: Mostra implementazione flatten
+
+---
+
+## Rust non è difficile!
+
+---
+
+## Domande?
+
+---
+
+## Grazie a tutti!
